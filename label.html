@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family:times new roman;
+      background-color:rgb(244, 200, 120);
+      text-align: center;
+
+    height:800px;
+    }
+
+    .login-container {
+      width: 300px;
+      margin: 150px auto;
+      padding: 20px;
+      background-color:white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(33, 29, 29, 0.2);
+    }
+
+    .login-container h2 {
+      margin-bottom: 20px;
+      color:orange;
+    }
+
+    .login-form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .login-form label {
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .login-form input[type="text"],
+    .login-form input[type="password"],
+    .login-form input[type="date"],
+    .login-form input[type="tel"] {
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .login-form input[type="submit"] {
+      padding: 10px 20px;
+      background-color:orange;
+      color:white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .login-form input[type="submit"]:hover {
+      background-color: orange;
+    }
+    button {
+  width:100%;
+  padding:10px;
+  background-color:rgb(17, 11, 1);
+  color: #ef9a12;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align:center;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  background-color: #3e8e41;
+}
+  </style>
+</head>
+
+<body style="height: 300px;">
+  <div class="login-container">
+    <h2>Login</h2>
+    <form class="login-form" action="#" method="post">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+      <label for="mobile">Mobile Number:</label>
+      <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+      <input type="submit" value="Login"></form></div>
+     
+</body>
+
+</html>
+
+  
